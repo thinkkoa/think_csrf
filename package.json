@@ -1,0 +1,27 @@
+{
+  "name": "think_csrf",
+  "version": "1.0.0",
+  "description": "CSRF for ThinkKoa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run eslint",
+    "test-cov": "istanbul cover ./node_modules/mocha/bin/_mocha -- -t 50000 --recursive  -R spec test/",
+    "prepublish": "npm test",
+    "eslint": "eslint index.js"
+  },
+  "engines": {
+    "node": ">6.0.0"
+  },
+  "author": "richenlin",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "eslint": "^3.19.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2"
+  },
+  "dependencies": {
+    "think_lib": "^1.x.x"
+  }
+}
