@@ -60,7 +60,7 @@ const checkCsrf = function (ctx, options) {
     });
 };
 
-module.exports = function (options) {
+module.exports = function (options, app) {
     options = options ? lib.extend(defaultOptions, options, true) : defaultOptions;
     return function (ctx, next) {
         if (!ctx.session) {
