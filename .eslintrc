@@ -1,11 +1,9 @@
 // 官方文档 http://eslint.org/docs/rules/
 {
-  "parserOptions": {
-    "ecmaVersion" : 8
-  },
+  "parser": "babel-eslint",
   "env": {
-    "es6": true,
-    "node": true
+    "node": true,
+    "es6": true
   },
   // "extends": "eslint:recommended",
 
@@ -206,6 +204,9 @@
     "yoda": 0
   },
   "globals": {
+    "think": true,
+    "JsonError": true,
+    "PageError": true,
     "echo": true
   }
 }
